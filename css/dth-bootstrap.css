@@ -1,0 +1,40 @@
+.password-icon {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  padding: 12px 10px;
+  cursor: pointer;
+  color: #777;
+}
+
+.was-validated .password-icon {
+  right: 40px;
+}
+
+.is-invalid ~ .password-icon {
+  right: 40px;
+}
+
+.password-icon:hover {
+  color: #111;
+}
+
+.dth-input-wrapper .password-icon-show {
+  display: block;
+}
+
+.dth-input-wrapper .password-icon-hide {
+  display: none;
+}
+
+.dth-input-wrapper.show .password-icon-show {
+  display: none;
+}
+
+.dth-input-wrapper.show .password-icon-hide {
+  display: block;
+}
+
+.dth-btn {
+  min-width: 150px;
+}

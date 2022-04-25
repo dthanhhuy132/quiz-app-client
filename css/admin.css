@@ -1,0 +1,156 @@
+.header {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.header__admin {
+  font-weight: 700;
+  color: #666;
+}
+
+.header__notifycation {
+  text-decoration: none;
+  cursor: pointer;
+  color: #666;
+}
+.header__notifycation:hover {
+  color: #0d6efd;
+}
+
+.log-out a {
+  margin-left: 5px;
+}
+
+.content {
+  margin-top: 50px;
+  padding: 20px;
+}
+
+/* ###################### nav tab */
+
+.nav {
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgb(175, 174, 174);
+}
+
+.nav-item {
+  padding: 0;
+}
+
+.nav-item button {
+  min-width: 150px;
+}
+
+/* ###################### Question - Quiz*/
+
+.quiz {
+  border-radius: 10px;
+  min-height: 0px;
+  position: relative;
+  min-height: 400px;
+  transition: all 0.2s ease;
+}
+
+.quiz:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.question-index {
+  min-height: 100px;
+}
+.answer-true {
+  color: rgb(14, 224, 14);
+  font-weight: 700;
+}
+
+.quiz-add {
+  border-color: #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-add i {
+  color: #999;
+  font-size: 5rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  padding: 50px;
+}
+
+.quiz-add i:hover {
+  transform: scale(2);
+  color: #0d6efd;
+}
+
+/* Add - edit question */
+
+.answer_wraper input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.answer-label {
+  margin: 6px 10px !important;
+}
+
+.text-alert {
+  color: red;
+  font-size: 13px;
+  padding-top: 20px;
+  display: none;
+}
+
+.quiz-options {
+  display: absolute;
+  opacity: 0;
+  margin-top: -10px;
+}
+
+.quiz:hover .quiz-options {
+  opacity: 1;
+}
+
+.quiz-options i {
+  padding: 10px;
+  cursor: pointer;
+  color: #999;
+
+  font-size: 20px;
+}
+
+.quiz-options i:hover {
+  background-color: rgb(199, 199, 199);
+  border-radius: 50%;
+  color: #222;
+}
+
+/* Feedback */
+.feedback-list {
+  border-radius: 10px;
+}
+
+.feedback-wrapper {
+  border: 1px solid #999;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+.feedback-item__subject {
+  font-weight: 700;
+}
+
+.feedback-item__username {
+  font-weight: 700;
+}
+
+.feedback-item__subject-title {
+  font-size: 20px;
+}
+
+.feedback-item__subject-name {
+  font-size: 15px;
+  font-weight: 300;
+}

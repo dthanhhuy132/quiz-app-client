@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin QuizApp</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link rel="stylesheet" href="./css/dth-bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/admin.css" />
+</head>
+
+<body>
+
+  <div class="loading-page">
+    <img src="./img/loading-page.gif" alt="">
+    <h1 class="text-description">Wellcome to Quiz-app</h1>
+    <p style="text-align: center;">Wait me a second</p>
+  </div>
+
+
+
+
+
+  <!-- Modal login start -->
+  <!-- Button trigger modal -->
+
+  <div class="header">
+    <span class="header__admin"><i class="fa-solid fa-user-large"></i> Admin</span>
+
+
+    <a href="/index.html" class="log-out">
+      Logout
+    </a>
+  </div>
+
+
+  <div class="content">
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+          type="button" role="tab" aria-controls="pills-home" aria-selected="true">Questions</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+          type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Feedback</button>
+      </li>
+
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+        <!-- tab1 question start -->
+        <div class="container-fluid">
+          <div class="row question-list gy-4">
+
+            <div class="col col-12 col-sm-12 col-md-6 col-lg-3">
+              <div class="quiz quiz-add">
+                <i class="fa-solid fa-plus" title="Add new question"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Feedback -->
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="container-fluid">
+            <div class="row feedback-list gx-2 gy-2">
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal add - edit-->
+  <div class="modal fade" id="adminModal">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="adminModal-title">Add new question</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label" id="titile-add-edit">Question:</label>
+            <textarea type="text" class="form-control question-quiz-text" placeholder="Enter new question"
+              rows="4"></textarea>
+          </div>
+
+          <div class="answer_wraper">
+            <div class="input-group mb-3">
+              <div class="input-group-text">
+                <input class="form-check-input mt-0 answer-correct" type="checkbox" value="a">
+              </div>
+              <label for="a" class="answer-label">a.</label>
+              <input type="text" class="form-control question-quiz-answer" id="a" aria-label="Text input with checkbox">
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-text">
+                <input class="form-check-input mt-0 answer-correct" type="checkbox" value="b">
+              </div>
+              <label for="a" class="answer-label">b.</label>
+              <input type="text" class="form-control question-quiz-answer" id="b" aria-label="Text input with checkbox">
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-text">
+                <input class="form-check-input mt-0 answer-correct" type="checkbox" value="c">
+              </div>
+              <label for="a" class="answer-label">c.</label>
+              <input type="text" class="form-control question-quiz-answer" id="c" aria-label="Text input with checkbox">
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-text">
+                <input class="form-check-input mt-0 answer-correct" type="checkbox" value="d">
+              </div>
+              <label for="a" class="answer-label">d.</label>
+              <input type="text" class="form-control question-quiz-answer" id="d" aria-label="Text input with checkbox">
+            </div>
+          </div>
+
+          <p class="text-alert">Please enter all field</p>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary answer-add-update-btn">Create</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal add-edit end -->
+
+  <!-- Modal delete confirm start -->
+  <div class="modal fade" id="deleteConfirmModal">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="deleteConfirmModal-title">Delete Confirm</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body delete-modal-body"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary confirm-delete-btn">I am very sure</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal delete confirm end -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script type="module" src="./js/admin.js"></script>
+</body>
+
+</html>
