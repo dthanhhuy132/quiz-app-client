@@ -1,5 +1,5 @@
 import axios from 'axios';
-const baseURL = 'https://json-server-quizapp.herokuapp.com/api';
+const baseURL = 'https://quizzapp-jsonserver.herokuapp.com/api';
 
 const axiosClient = axios.create({
   baseURL: baseURL,

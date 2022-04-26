@@ -37,9 +37,9 @@ let isSubmited = false;
 const CORRECT_ANSWER_ARR = 'CORRECT_ANSWER_ARR';
 let myQuestions;
 
+pageLoading.show();
 (async () => {
   try {
-    pageLoading.show();
     const questions = await questionApi.getAllQuestions();
     myQuestions = questions.data;
 

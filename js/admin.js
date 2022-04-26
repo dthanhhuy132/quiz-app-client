@@ -49,6 +49,7 @@ adQuestionBtn.addEventListener('click', () => {
   adminModal.show();
   const questionQuiz = document.querySelector('.question-quiz-text');
   delete questionQuiz.dataset.id;
+  resetAddEditQuestionFormAdmin();
 
   const addUpdateTextBtn = document.querySelector('.answer-add-update-btn');
   addUpdateTextBtn.innerText = 'Create';

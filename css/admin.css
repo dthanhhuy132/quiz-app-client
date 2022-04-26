@@ -136,6 +136,7 @@
   border: 1px solid #999;
   padding: 15px 20px;
   border-radius: 10px;
+  min-height: 200px;
 }
 
 .feedback-item__subject {

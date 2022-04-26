@@ -1,0 +1,148 @@
+.start-section {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.start-section-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(10px);
+}
+
+.btn-group {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+  background-color: rgb(116, 114, 114);
+  border: none;
+}
+
+.btn {
+  text-decoration: none;
+  color: #fff;
+  display: inline;
+  text-align: center;
+}
+
+.start-game-btn {
+  font-size: 60px;
+  min-width: 500px;
+  opacity: 0.8;
+
+  margin-bottom: 100px;
+  transition: all 0.2s ease;
+}
+
+.start-game-btn:hover {
+  box-shadow: 5px 5px 30px rgb(11, 233, 26);
+  color: rgb(0, 255, 26);
+  font-weight: 900;
+}
+
+.app-feature-btn {
+  min-width: 200px;
+  font-size: 20px;
+
+  background-color: rgb(95, 95, 95);
+  opacity: 0.3;
+}
+
+.app-feature-btn {
+  color: rgb(223, 207, 34);
+}
+
+.app-feature-btn:hover {
+  box-shadow: 3px 3px 30px rgb(227, 231, 9);
+  opacity: 0.7;
+}
+
+#introduction {
+  position: relative;
+}
+.dth-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.feature-item {
+  position: relative;
+  border: 1px solid rgb(169, 168, 168);
+  border-radius: 10px;
+  padding: 10px;
+
+  z-index: 0;
+  transition: all 0.2s ease;
+}
+
+.feature-img {
+  padding: 10px;
+  border: 1px solid rgb(62, 61, 61);
+  border-radius: 10px;
+}
+
+.feature-name {
+  padding-top: 10px;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.intro-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(10px);
+}
+
+.intro-title {
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  padding-top: 0;
+  margin-top: 0;
+
+  font-weight: 900;
+
+  transform: translateX(-50%);
+}
+
+.feature-item:hover {
+  box-shadow: rgba(255, 255, 255, 0.7) 0px 19px 38px, rgba(255, 255, 255, 0.78) 0px 15px 12px;
+  z-index: 1000;
+}
+
+.cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(17, 17, 17, 0.8);
+  z-index: -1;
+  transition: all 0.1s ease;
+}
+
+.feature-item:hover {
+  z-index: 1000;
+  transform: scale(1.5);
+}
+
+.feature-item:hover ~ .cover {
+  z-index: 10;
+}
