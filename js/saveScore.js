@@ -16,7 +16,7 @@ function saveScore(score, postResultModal) {
     let markData = {
       userName: userName.value,
       userEmail: userEmail.value,
-      score: score.toFixed(2),
+      score: score.toFixed(0),
     };
 
     if (userEmail.value == '' || userEmail.value == '') {

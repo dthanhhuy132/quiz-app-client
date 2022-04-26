@@ -194,13 +194,14 @@
           <div class="mb-3 row">
             <label for="staticEmail" class="col-sm-4 col-form-label">Your name</label>
             <div class="col-sm-8">
-              <input type="email" class="form-control" placeholder="Enter your name" id="user-name">
+              <input type="email" class="form-control" placeholder="Enter your name" id="user-name" autocomplete="off">
             </div>
           </div>
           <div class="mb-3 row">
             <label for="inputPassword" class="col-sm-4 col-form-label">Your email</label>
             <div class="col-sm-8">
-              <input type="email" class="form-control" placeholder="enter your email" id="user-email">
+              <input type="email" class="form-control" placeholder="enter your email" id="user-email"
+                autocomplete="off">
             </div>
           </div>
 
@@ -230,24 +231,26 @@
           <h5 class="modal-title text-center" id="">Your feedback</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+
+        <form class="modal-body" autocomplete="off">
           <div class="mb-3">
             <label class="form-label">Your name</label>
-            <input type="text" class="form-control" id="feedback-name" aria-describedby="emailHelp">
+            <input type="text" class="form-control" id="feedback-name" autocomplete="off">
           </div>
           <div class="mb-3">
             <label class="form-label">Your email</label>
-            <input type="text" class="form-control" id="feedback-email">
+            <input type="text" class="form-control" id="feedback-email" autocomplete="off">
           </div>
           <div class="mb-3">
             <label>Feedback subject</label>
-            <input type="text" class="form-control" id="feedback-subject">
+            <input type="text" class="form-control" id="feedback-subject" autocomplete="off">
           </div>
           <div class="mb-3">
             <label class="form-label">Your feedback</label>
-            <textarea type="text" class="form-control" id="feedback-content"></textarea>
+            <textarea type="text" class="form-control" id="feedback-content" autocomplete="off"></textarea>
           </div>
-        </div>
+        </form>
+
         <div class="modal-footer  text-center">
           <button type="button" class="btn btn-primary" id="post-feedback-to-server">Send my feedback</button>
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>

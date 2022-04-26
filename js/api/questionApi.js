@@ -18,6 +18,12 @@ const questionApi = {
 
     return axiosClient.delete(url);
   },
+
+  editQuestion(id) {
+    const url = `/questions/${id}`;
+
+    return axiosClient.patch(url);
+  },
 };
 
 export default questionApi;
