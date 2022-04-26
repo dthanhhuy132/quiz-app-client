@@ -1,6 +1,6 @@
 import { checkEnoughQuestionAnswer } from './utils';
 
-export default function getNewQuestionData() {
+export default function getQuestionData() {
   const questionQuiz = document.querySelector('.question-quiz-text');
   const correctAnswers = document.querySelectorAll('.answer-correct:checked');
   const answersQuiz = document.querySelectorAll('.question-quiz-answer');
@@ -34,5 +34,10 @@ export default function getNewQuestionData() {
     multi: multiAnswer,
   };
 
-  return questionData;
+  let questionId = questionQuiz.dataset.id;
+
+  return {
+    questionData,
+    questionId,
+  };
 }

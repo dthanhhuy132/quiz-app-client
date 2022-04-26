@@ -19,10 +19,10 @@ const questionApi = {
     return axiosClient.delete(url);
   },
 
-  editQuestion(id) {
+  editQuestion(id, data) {
     const url = `/questions/${id}`;
 
-    return axiosClient.patch(url);
+    return axiosClient.patch(url, data);
   },
 };
 

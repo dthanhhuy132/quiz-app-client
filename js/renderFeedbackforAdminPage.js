@@ -1,8 +1,6 @@
 const feedbackListEl = document.querySelector('.feedback-list');
 
 function renderFeedback(feedbacks) {
-  console.log('feedbacks', feedbacks);
-
   feedbacks.forEach((feedback) => {
     deRenderFeedback(feedback);
   });
