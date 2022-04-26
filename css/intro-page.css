@@ -24,18 +24,16 @@
   flex-direction: column;
 }
 
-.btn {
-  border-radius: 10px;
-  padding: 20px;
-  cursor: pointer;
-  background-color: rgb(116, 114, 114);
-  border: none;
-}
+.dth-btn {
+  display: inline;
 
-.btn {
+  padding: 20px;
+  background-color: rgb(116, 114, 114);
+
+  border-radius: 10px;
+
   text-decoration: none;
   color: #fff;
-  display: inline;
   text-align: center;
 }
 
